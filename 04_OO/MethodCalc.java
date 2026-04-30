@@ -15,3 +15,4 @@ public class MethodCalc {
         System.out.println(calc.className());
     }
 }
+

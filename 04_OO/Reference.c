@@ -20,7 +20,7 @@ int main (void) {
 
     greet(bob);     // 私はBobです。19歳です。
     greet(alice);   // 私はAliceです。20歳です。
-    greet(tom1);     // 私はTomです。21歳です。
+    greet(tom1);    // 私はTomです。21歳です。
 
     Person *tom2 = &bob;
     strcpy(tom2->name, "Tom");
