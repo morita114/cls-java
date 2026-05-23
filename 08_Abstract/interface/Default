@@ -1,0 +1,13 @@
+interface Configurable {
+
+    // フィールドは暗黙的に public static final（定数）
+    int MAX_SIZE = 100;
+
+    // default メソッド：実装を持てる（後から機能追加するための仕組み）
+    default void showConfig() {
+        System.out.println("最大サイズ: " + MAX_SIZE);
+    }
+
+    // 抽象メソッドは従来通り
+    void configure(String setting);
+}

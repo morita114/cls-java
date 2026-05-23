@@ -8,15 +8,16 @@ class Dog {
     @Override   // Object クラスの equals() をオーバーライド
     public boolean equals(Object obj) {
         if (this == obj) return true;  // 同一オブジェクトなら true
+        else             return false;
     }
 }
 
 public class ObjectCls {
     public static void main(String[] args) {
         Dog d1 = new Dog("ポチ");
-        Dog d2 = new Dog("ポチ2");
+        Dog d2 = new Dog("ポチ");
         System.out.println(d1);  // Dog{name='ポチ'}
-        System.out.println(d1.equals(d2)); // false（内容は同じだが別のオブジェクト）
+        System.out.println(d1.equals(d2)); // false（別のオブジェクト）
     }
 }
 
