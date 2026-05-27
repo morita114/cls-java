@@ -26,8 +26,6 @@ class Circle implements Drawable, Resizable {
     }
 }
 
-
-
 public class Implement {
     public static void main(String[] args) {
         Drawable d = new Circle(3.0);   // インタフェース型で受け取れる
